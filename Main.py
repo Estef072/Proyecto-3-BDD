@@ -15,7 +15,7 @@ class Main:
             
             
             if(dato == 1):
-                print("llamar a la creacion de cuenta jaja")
+                call = Main.llamarR()
             elif (dato == 2):
 
                 call = Main.llamar()
@@ -30,7 +30,9 @@ class Main:
 
         import Login
            
-            
+    def llamarR():
+
+        import Register 
 
 
 

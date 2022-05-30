@@ -1,10 +1,5 @@
 
-from mimetypes import init
 import psycopg2
-
-from tkinter import messagebox
-
-from hashlib import sha256
 
 
 class Login:
@@ -14,7 +9,7 @@ class Login:
             contraseña = input("Ingresa tu contraseña:\n")
             datos = [usuario,contraseña]
             self.tuplas = tuple(datos)
-            self.connection = psycopg2.connect(dbname ="proyecto#2", user = "postgres", password ="3369")
+            self.connection = psycopg2.connect(dbname ="proyecto#3", user = "postgres", password ="3369")
             self.cursor = self.connection.cursor()
             self.cursor.execute("SELECT* FROM usuarios WHERE usuario=%s and password =%s",self.tuplas)
                     
@@ -30,7 +25,7 @@ class Login:
                     contraseña = input("Ingresa tu contraseña:\n")
                     datos = [usuario,contraseña]
                     self.tuplas = tuple(datos)
-                    self.connection = psycopg2.connect(dbname ="proyecto#2", user = "postgres", password ="3369")
+                    self.connection = psycopg2.connect(dbname ="proyecto#3", user = "postgres", password ="3369")
                     self.cursor = self.connection.cursor()
                     self.cursor.execute("SELECT* FROM usuarios WHERE usuario=%s and password =%s",self.tuplas)
                     row =self.cursor.fetchone()
@@ -44,7 +39,7 @@ class Login:
                         print("|______________________|")
                         self.connection.commit ()
                         self.connection.close()
-                    ejecucion = False
+                        ejecucion = False
 
 
             else:
