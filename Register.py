@@ -8,14 +8,14 @@ class Register:
     def registrarse (self):
         correo = input("Ingrese su correo electronico \n")
         usuario = input("Ingrese su nombre usuario\n ")
-        contra = input("Confirme  su Contraseña \n ")
-        confiContra = input("Ingrese su Contraseña \n")
-        suscris =input("ingrese su tipo de susripcion ")
-        tipoUs = input("ingrese su tipo de usuario")
+        contra = input("Ingrese  su Contraseña \n ")
+        confiContra = input("confirme su Contraseña \n")
+        suscris =input("ingrese su tipo de susripcion \n")
+        tipoUs = input("ingrese su tipo de usuario\n")
         h = sha256()
         h.update(contra.encode())
         contraHash= h.hexdigest()
-        print(contraHash)
+        
 
         datos = [usuario, contraHash,correo,suscris, tipoUs]
         self.tuplaa = tuple(datos)
@@ -35,7 +35,7 @@ class Register:
                 correo = input("Ingrese su correo electronico \n")
                 usuario = input("Ingrese su nombre usuario\n ")
                 contra = input("Confirme  su Contraseña \n ")
-                confiContra = input("Ingrese su Contraseña \n")
+                confiContra = input("Ingrese su usuario \n")
                 print("Tipos de suscripciones")
                 print("1.Premium")
                 print("1.Familiar")

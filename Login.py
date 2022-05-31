@@ -5,6 +5,8 @@ import psycopg2
 class Login:
     
     def loguear(self):    
+            print ("Bienvenido")
+            print ("Debes loguearte")
             usuario = input ("Ingresa tu usuario:\n")
             contraseña = input("Ingresa tu contraseña:\n")
             datos = [usuario,contraseña]

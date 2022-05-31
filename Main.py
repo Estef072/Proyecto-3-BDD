@@ -16,9 +16,13 @@ class Main:
             
             if(dato == 1):
                 call = Main.llamarR()
+                call2 = Main.llamar()
+                call3 = Main.llamarP()
+
             elif (dato == 2):
 
                 call = Main.llamar()
+                call2 = Main.llamarP()
                 
             else:
                 print("Opcion invalida ")
@@ -34,6 +38,8 @@ class Main:
 
         import Register 
 
+    def llamarP ():
+        import paginaP
 
 
 Main.iniciar()

@@ -48,7 +48,8 @@ class paginaP:
                         print("2. Simulaciones")
                         dato = int (input("Selecciona una opción: \n"))
                         if dato == 1:
-                            print ("nada jaja")
+                            import Crear
+                            print ("administrador creado con éxito")
                         elif dato == 2:
                             print ("nada X2")
                         else:
@@ -108,11 +109,10 @@ class paginaP:
                         print("3. Simulaciones")
                         dato = int (input("Selecciona una opción: \n"))
                         if dato == 1:
-                            print ("nada jaja")
+                          import Crear
+                          print ("administrador creado con éxito")
                         elif dato == 2:
                             print ("nada X2")
-                        elif dato == 3: 
-                            print("nada X3")
                         else:
                             print ("opcion invalida")
                         
