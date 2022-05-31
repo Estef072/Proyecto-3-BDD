@@ -65,7 +65,7 @@ def generador():
         print("Perfil ", listaU[0]) #Imprimiendo al perfil que verá aleatoriamente la película.
 
         perfil = listaU[0] #Obteniendo el perfil que verá las películas.
-        visto = 2
+        visto = random.randint(1,2)
 
        
 

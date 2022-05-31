@@ -46,12 +46,15 @@ class paginaP:
                         print("Menú de operaciones")
                         print("1.Mantenimiendo de administradores")
                         print("2. Simulaciones")
+                        print("3. Busqueda")
                         dato = int (input("Selecciona una opción: \n"))
                         if dato == 1:
                             import Crear
                             print ("administrador creado con éxito")
                         elif dato == 2:
-                            print ("nada X2")
+                           import simulacion
+                        elif dato == 3:
+                            import buscar
                         else:
                             print ("opcion invalida")
 
@@ -105,14 +108,16 @@ class paginaP:
                         self.connection.close()
                         print("Menú de operaciones")
                         print("1.Mantenimiendo de administradores")
-                        print("2. Bitacora:")
-                        print("3. Simulaciones")
+                        print("2. Simulaciones:")
+                        print("3. Busqueda")
                         dato = int (input("Selecciona una opción: \n"))
                         if dato == 1:
                           import Crear
                           print ("administrador creado con éxito")
                         elif dato == 2:
-                            print ("nada X2")
+                            import simulacion
+                        elif dato == 3:
+                            import buscar
                         else:
                             print ("opcion invalida")
                         
