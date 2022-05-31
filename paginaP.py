@@ -7,7 +7,7 @@ class paginaP:
         if tipoC == "administrador":
             usuario = input("ingrese su usuario \n")
             con = input ("ingrese su contraseña \n")
-            contra = "administrador"
+            contra = "Administrador"
             datos = [usuario,con,contra]
             self.tuplas = tuple(datos)
             self.connection = psycopg2.connect(dbname ="proyecto#3", user = "postgres", password ="3369")
