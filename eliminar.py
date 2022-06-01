@@ -13,9 +13,6 @@ class eliminar ():
             self.cursor.execute("DELETE FROM peliculas WHERE id_pelicula=%s and titulo =%s  ",self.tuplaa)      
             self.connection.commit ()
             self.connection.close()
-            print ("se eliminó con exito")
-
         
-
 c=eliminar()
 c.eliminar (1)

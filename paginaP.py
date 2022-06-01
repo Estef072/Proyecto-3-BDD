@@ -1,6 +1,6 @@
 
 import psycopg2 
-from eliminar import*
+
 class paginaP:
     def principal (self):
         print("A que tipo de usuario perteneces:")
@@ -8,7 +8,7 @@ class paginaP:
         if tipoC == "administrador":
             usuario = input("ingrese su usuario \n")
             con = input ("ingrese su contraseña \n")
-            contra = "Administrador"
+            contra = "administrador"
             datos = [usuario,con,contra]
             self.tuplas = tuple(datos)
             self.connection = psycopg2.connect(dbname ="proyecto#3", user = "postgres", password ="3369")
@@ -39,11 +39,11 @@ class paginaP:
                         print("|__________|")
                         print("no eres un usuario estandar")
                     else:
+                        self.connection.commit ()
+                        self.connection.close()
                         print(" ______________________")
                         print("|  Bienvenido          |")
                         print("|______________________|")
-                        self.connection.commit ()
-                        self.connection.close()
                         print("Menú de operaciones")
                         print("1.Mantenimiendo de administradores")
                         print("2. Simulaciones")
