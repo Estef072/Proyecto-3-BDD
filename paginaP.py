@@ -1,5 +1,6 @@
 
 import psycopg2 
+from eliminar import*
 class paginaP:
     def principal (self):
         print("A que tipo de usuario perteneces:")
@@ -47,6 +48,7 @@ class paginaP:
                         print("1.Mantenimiendo de administradores")
                         print("2. Simulaciones")
                         print("3. Busqueda")
+                        print("4. Opciones avanzadas")
                         dato = int (input("Selecciona una opción: \n"))
                         if dato == 1:
                             import Crear
@@ -55,6 +57,38 @@ class paginaP:
                            import simulacion
                         elif dato == 3:
                             import buscar
+                        elif dato == 3:
+                            print ("1.Eliminar")
+                            print ("2.Agregar")
+                            print ("3.Modificar")
+                            dato2  = input ("Ingrese la opcion que desea:")
+                            if dato2 == 1:
+                                print ("1. Usuarios")
+                                print ("2. Perfiles")
+                                print(" 3. Peliculas")
+                                print ("4. Actores")
+                                print ("5. Anuncios")
+                                index = int(input ("Seleccione una opcion"))
+                                if index == 1:
+                                    print ("nada")
+
+                            elif dato2 == 2:
+                                print ("1. Usuarios")
+                                print ("2. Perfiles")
+                                print(" 3. Peliculas")
+                                print ("4. Actores")
+                                print ("5. Anuncios")
+                             
+                            elif dato2 == 3:
+                                print ("1. Usuarios")
+                                print ("2. Perfiles")
+                                print(" 3. Peliculas")
+                                print ("4. Actores")
+                                print ("5. Anuncios")
+
+
+
+
                         else:
                             print ("opcion invalida")
 
