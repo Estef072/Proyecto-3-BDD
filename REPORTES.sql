@@ -2,6 +2,17 @@
 CREATE INDEX index_usuarios ON usuarios(usuario);
 CREATE INDEX index_pelicula ON peliculas(id_pelicula);
 
+/* TOP 10 TÉRMINOS QUE LOS USUARIOS BUSCAN */
+SELECT	
+	termino, COUNT(termino) AS recuento_termino_mas_buscado
+FROM	
+	busqueda
+GROUP BY
+	termino
+ORDER BY
+	COUNT(termino) DESC
+LIMIT 
+	10
 
 /* TOP 5 ADMIN QUE MÁS HAN HECHO MODIFICACIONES */
 SELECT
