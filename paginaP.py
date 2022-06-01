@@ -49,6 +49,7 @@ class paginaP:
                         print("2. Simulaciones")
                         print("3. Busqueda")
                         print("4. Opciones avanzadas")
+                        print("5. Reporteria")
                         dato = int (input("Selecciona una opción: \n"))
                         if dato == 1:
                             import Crear
@@ -57,7 +58,7 @@ class paginaP:
                            import simulacion
                         elif dato == 3:
                             import buscar
-                        elif dato == 3:
+                        elif dato == 4:
                             print ("1.Eliminar")
                             print ("2.Agregar")
                             print ("3.Modificar")
@@ -87,7 +88,8 @@ class paginaP:
                                 print ("5. Anuncios")
 
 
-
+                        elif dato == 5:
+                             import reporteria
 
                         else:
                             print ("opcion invalida")
